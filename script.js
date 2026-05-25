@@ -73,13 +73,11 @@ function checkWinner(){
             clearInterval(countdown);
             let player = localStorage.getItem("player") || "Unknown";
 
-            let endTime = Date.now();
-            let timeTaken = Math.floor((endTime - startTime) / 1000);
             let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
             leaderboard.push({
               name: player,
-            score: timeTaken
+            score: 5
             });
 
-        localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+        localStorage.setItem("score",5);
         }}}

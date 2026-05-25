@@ -20,7 +20,7 @@
         <br><br>
 
         <button type="button"
-         onclick="window.location.href='bingo.html'">
+         onclick="savePlayer()">
          Login</button>
 
         <h2 id="welcome"></h2>
@@ -31,6 +31,17 @@
 <p class="footer">
 Created by Rosmi Theresa Mathew
 </p>
+<script>
+function savePlayer() {
+
+    let name =
+    document.getElementById("username").value;
+
+    localStorage.setItem("player", name);
+
+    window.location.href = "bingo.html";
+}
+</script>
 
 </body>
 
