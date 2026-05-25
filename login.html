@@ -3,32 +3,161 @@
 
 <head>
 
-    <title>Login</title>
+  <title>Bingo Game</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <div class="login-box">
-        <h1>BINGO GAME</h1>
-        <p class ="subtitle">Welcome Player!</p>
+  <h1>BINGO GAME</h1>
+  <button onclick="location.reload()" class=""restart-btn">
+  Restart Game
+  </button>
 
-        <input type="text" id="username" placeholder="Enter your name">
+  <button
+   onclick="window.location.href='leaderboard.html'"
+  class="leaderboard-btn">
+    View Leaderboard
+   </button>
 
-        <br><br>
+  <h2 id="timer">Time Left: 60</h2>
+  <h3 id="player"></h3>
+  <h2 id="message"></h2> 
 
-        <button onclick="login()">Login</button>
+  <div class="board">
 
-        <h2 id="welcome"></h2>
-
+    <div class="box" id="b1">
+      <img src="https://img.icons8.com/color/96/cat.png">
+      <p>Cat</p>
     </div>
 
-<script src="login.js"></script>
-<p class="footer">
-Created by Rosmi Theresa Mathew
-</p>
+    <div class="box" id="b2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png">
+      <p>Pizza</p>
+      </div>
+
+    <div class="box" id="b3">
+     <img src="https://cdn-icons-png.flaticon.com/512/744/744465.png">
+     <p>Car</p>
+    </div>
+
+    <div class="box" id="b4">
+     <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+     <p>Dog</p>
+    </div>
+
+    <div class="box" id="b5">
+      <img src="https://img.icons8.com/color/96/apple.png">
+      <p>Apple</p>
+    </div>
+
+    <div class="box" id="b6">
+      <img src="https://img.icons8.com/color/96/fish.png">
+      <p>Fish</p>
+    </div>
+
+    <div class="box" id="b7">
+      <img src="https://img.icons8.com/color/96/bird.png">
+      <p>Bird</p>
+    </div>
+
+    <div class="box" id="b8">
+      <img src="https://img.icons8.com/color/96/basketball.png">
+      <p>Ball</p>
+    </div>
+
+    <div class="box" id="b9">
+      <img src ="https://img.icons8.com/color/96/book.png">
+      <p>Book</p>
+    </div>
+
+    <div class="box" id="b10">
+      <img src="https://img.icons8.com/color/96/birthday-cake.png">
+      <p>Cake</p>
+    </div>
+
+    <div class="box" id="b11">
+      <img src="https://img.icons8.com/color/96/flower.png">
+      <p>Flower</p>
+      </div>
+
+    <div class="box" id="b12">
+      <img src="https://img.icons8.com/color/96/lion.png">
+      <p>Lion</p>
+    </div>
+
+    <div class="box" id="b13">
+      <img src="https://img.icons8.com/color/96/coffee-to-go.png">
+      <p>Coffee</p>
+      </div>
+
+    <div class="box" id="b14">
+      <img src="https://img.icons8.com/color/96/mango.png">
+      <p>Mango</p>
+    </div>
+
+    <div class="box" id="b15">
+      <img src="https://img.icons8.com/color/96/iphone.png">
+      <p>Phone</p>
+      </div>
+
+    <div class="box" id="b16">
+      <img src="https://img.icons8.com/color/96/gift.png">
+      <p>Gift</p>
+      </div>
+
+    <div class="box" id="b17">
+      <img src="https://img.icons8.com/color/96/laptop.png">
+      <p>Laptop</p>
+      </div>
+
+    <div class="box" id="b18">
+      <img src="https://img.icons8.com/color/96/hamburger.png">
+      <p>Burger</p>
+      </div>
+
+    <div class="box" id="b19">
+      <img src="https://img.icons8.com/color/96/sun.png">
+      <p>Sun</p>
+      </div>
+
+    <div class="box" id="b20">
+      <img src="https://img.icons8.com/color/96/moon-symbol.png">
+      <p>Moon</p>
+      </div>
+
+    <div class="box" id="b21">
+      <img src="https://img.icons8.com/color/96/star.png">
+      <p>Star</p>
+      </div>
+
+    <div class="box" id="b22">
+      <img src="https://img.icons8.com/color/96/clock.png">
+      <p>clock</p>
+      </div>
+
+    <div class="box" id="b23">
+      <img src="https://img.icons8.com/color/96/doughnut.png">
+      <p>Donut</p>
+      </div>
+    
+      <div class="box" id="b24">
+        <img src="https://img.icons8.com/color/96/camera.png">
+        <p>Camera</p>
+      </div>
+
+    <div class="box" id="b25">
+      <img src="https://img.icons8.com/color/96/panda.png">
+      <p>Panda</p>
+    </div>
+
+  </div>
+
+ 
+<br><br>
+<script src="script.js"></script>
 
 </body>
 
